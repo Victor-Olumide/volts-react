@@ -12,6 +12,7 @@ export default function Login() {
             <InputData type="email" placeholder="Enter your email" />
             <InputData type="password" placeholder="Enter your password" />
             <FormButton data="sign in"/>
+            
             <Link href="/forgot-password" className='w-full flex justify-center'> <FormButton data="forgot password" /></Link>
 
         </form>
