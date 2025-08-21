@@ -1,5 +1,7 @@
 import { Playwrite_AR } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const play = Playwrite_AR({
   subsets: ["latin"],
@@ -19,7 +21,12 @@ export default function RootLayout({ children }) {
       <body
         className={play.className}
       >
+        <Navbar />
+        <div className="min-h-screen p-4">
+
         {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
