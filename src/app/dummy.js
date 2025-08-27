@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: 1,
     name: "Wireless Headphones",
@@ -298,7 +298,31 @@ const products = [
     productDetails: "Stylish handbag for casual and formal occasions.",
     image: "https://via.placeholder.com/150",
     dealer: "StyleHub"
+  },
+  {
+    id: 21,
+    name: "Something",
+    category: "Category",
+    amount: 2000,
+    productDescription: [
+      "Lorem ipsum",
+      "Dolor sit amet",
+      "Consectetur",
+      "Adipiscing elit"
+    ],
+    productDetails: "Detailed description of the product goes here.",
+    image: "https://via.placeholder.com/150",
+    dealer: "DealerName"
   }
 ];
 
 
+const navbar = [
+
+  { name: "Home", href: "/" },
+  { name: "Products", href: "/products" },
+  { name: "About", href: "about" },
+  { name: "Contact", href: "/contact" }
+]
+
+export { products, navbar };

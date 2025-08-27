@@ -1,9 +1,10 @@
-import { Playwrite_AR } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { SidebarProviders } from "./providers";
 
-const play = Playwrite_AR({
+const play = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400"]
 });
@@ -21,12 +22,16 @@ export default function RootLayout({ children }) {
       <body
         className={play.className}
       >
+        <SidebarProviders>
+          
         <Navbar />
         <div className="min-h-screen p-4">
 
         {children}
         </div>
+
         <Footer />
+        </SidebarProviders>
       </body>
     </html>
   );
