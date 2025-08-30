@@ -1,4 +1,4 @@
-export const products = [
+const products = [
   {
     id: 1,
     name: "Wireless Headphones",
@@ -316,13 +316,11 @@ export const products = [
   }
 ];
 
-
 const navbar = [
-
   { name: "Home", href: "/" },
   { name: "Products", href: "/products" },
-  { name: "About", href: "about" },
+  { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" }
-]
+];
 
 export { products, navbar };
