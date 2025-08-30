@@ -39,40 +39,58 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ```
 my-react/
-├── public/                 # Static assets
-│   └── bg.png             # Background image
+├── public/                  # Static assets
+│   ├── bg.png               # Background image
+│   ├── 0.jpg ... 20.jpg     # Product images
+│   └── favicon.ico          # Site favicon
 ├── src/
-│   └── app/               # Next.js App Router directory
-│       ├── (dashboard)/   # Dashboard route group
-│       ├── about/         # About page
+│   └── app/                 # Next.js App Router directory
+│       ├── (dashboard)/     # Dashboard route group
+│       │   ├── layout.jsx
+│       │   ├── blog/
+│       │   │   └── page.jsx
+│       │   ├── faq/
+│       │   │   └── page.jsx
+│       │   ├── forgot-password/
+│       │   │   └── page.jsx
+│       │   ├── login/
+│       │   │   └── page.jsx
+│       │   └── signup/
+│       │       └── page.jsx
+│       ├── about/
 │       │   └── page.jsx
-│       ├── components/    # React components
+│       ├── components/      # React components
+│       │   ├── AddCart.jsx
 │       │   ├── AllProducts.jsx
+│       │   ├── CartLink.jsx
 │       │   ├── CreateTitle.jsx
+│       │   ├── DesktopNavbar.jsx
 │       │   ├── Footer.jsx
 │       │   ├── FormButton.jsx
 │       │   ├── InputData.jsx
+│       │   ├── MobileNavbar.jsx
 │       │   ├── Navbar.jsx
+│       │   ├── NavbarLink.jsx
 │       │   └── ProductCard.jsx
-│       ├── contact/       # Contact page
+│       ├── contact/
 │       │   └── page.jsx
-│       ├── products/      # Products page
-│       │   └── page.jsx
-│       ├── dummy.js       # Sample product data
-│       ├── favicon.ico    # Site favicon
-│       ├── globals.css    # Global styles
-│       ├── layout.jsx     # Root layout
-│       ├── loading.jsx    # Loading component
-│       ├── not-found.jsx  # 404 page
-│       └── page.jsx       # Home page
-├── .gitignore            # Git ignore rules
-├── eslint.config.mjs     # ESLint configuration
-├── jsconfig.json         # JavaScript configuration
-├── next.config.js        # Next.js configuration
-├── package.json          # Project dependencies
-├── package-lock.json     # Lock file
-├── postcss.config.mjs    # PostCSS configuration
-└── README.md            # Project documentation
+│       ├── products/
+│       │   └── [slug]/
+│       │       └── page.jsx
+│       ├── dummy.js         # Sample product data
+│       ├── globals.css      # Global styles
+│       ├── layout.jsx       # Root layout
+│       ├── loading.jsx      # Loading component
+│       ├── not-found.jsx    # 404 page
+│       └── page.jsx         # Home page
+├── .gitignore               # Git ignore rules
+├── eslint.config.mjs        # ESLint configuration
+├── jsconfig.json            # JavaScript configuration
+├── next.config.js           # Next.js configuration
+├── package.json             # Project dependencies
+├── package-lock.json        # Lock file
+├── postcss.config.mjs       # PostCSS configuration
+└── README.md                # Project documentation
 ```
 
 ### Key Features:
